@@ -134,11 +134,10 @@ body {
 
 .publication-topbar {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1rem;
   z-index: 1000;
   pointer-events: auto;
-  padding: 0.75rem 0.75rem 0 0;
 }
 
 .publication-links {
@@ -150,26 +149,69 @@ body {
 }
 
 .publication-link {
-  background: #ddd;
-  color: #000;
-  border: 2px solid #3f3f3f;
-  border-radius: 0;
-  padding: 0.7rem 1rem;
-  min-height: 3.1rem;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  box-shadow: none;
+  gap: 0.45rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(15, 23, 42, 0.36);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  transition: var(--transition);
   white-space: nowrap;
 }
 
-.publication-link .icon {
-  font-size: 1.25rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  color: #000;
-  margin-right: 0;
+.publication-link:hover {
+  transform: translateY(-1px);
+  background: rgba(15, 23, 42, 0.5);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.publication-link__icon {
+  width: 1.55rem;
+  height: 1.55rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  flex: 0 0 auto;
+}
+
+.publication-link__icon .fa-file-pdf,
+.publication-link__icon .fa-scroll,
+.publication-link__icon .fa-github,
+.publication-link__icon .fa-database {
+  font-size: 0.82rem;
+}
+
+.publication-link__text {
+  color: inherit;
+}
+
+.publication-link--paper .publication-link__icon {
+  background: rgba(239, 68, 68, 0.18);
+}
+
+.publication-link--arxiv .publication-link__icon {
+  background: rgba(59, 130, 246, 0.18);
+}
+
+.publication-link--code .publication-link__icon {
+  background: rgba(16, 185, 129, 0.18);
+}
+
+.publication-link--data .publication-link__icon {
+  background: rgba(168, 85, 247, 0.18);
 }
 
 .publication-title {
@@ -745,6 +787,27 @@ code {
     padding: 3rem 1rem 2rem;
   }
   
+  .publication-topbar {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+  
+  .publication-links {
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .publication-link {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.74rem;
+  }
+  
+  .publication-link__icon {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+  
   .publication-title {
     font-size: 2.5rem !important;
     line-height: 1.2 !important;
@@ -794,6 +857,25 @@ code {
 }
 
 @media screen and (max-width: 480px) {
+  .publication-topbar {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  
+  .publication-links {
+    gap: 0.25rem;
+  }
+  
+  .publication-link {
+    padding: 0.35rem 0.55rem;
+    font-size: 0.68rem;
+  }
+  
+  .publication-link__icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  
   .publication-title {
     font-size: 2rem !important;
   }
