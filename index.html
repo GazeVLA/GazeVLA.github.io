@@ -47,15 +47,15 @@
           <span class="icon"><i class="fas fa-file-pdf"></i></span>
           <span>Paper</span>
         </a>
-        <a href="" target="_blank" class="external-link button is-small publication-link">
+        <a href="https://youtu.be/a1-jS9uWwAI" target="_blank" rel="noopener noreferrer" class="external-link button is-small publication-link">
           <span class="icon"><i class="fab fa-youtube"></i></span>
           <span>Video</span>
         </a>
-        <a href="" target="_blank" class="external-link button is-small publication-link">
+        <a href="https://github.com/lichy2004/GazeVLA" target="_blank" rel="noopener noreferrer" class="external-link button is-small publication-link">
           <span class="icon"><i class="fab fa-github"></i></span>
           <span>Code</span>
         </a>
-        <a href="" target="_blank" class="external-link button is-small publication-link">
+        <a href="https://github.com/lichy2004/GazeVLA-Data" target="_blank" rel="noopener noreferrer" class="external-link button is-small publication-link">
           <span class="icon"><i class="fas fa-database"></i></span>
           <span>Data</span>
         </a>
@@ -174,7 +174,7 @@
           <video autoplay muted loop playsinline controls width="100%" preload="metadata">
             <source src="static/video/real_world/keyboard_robot.mp4" type="video/mp4">
           </video>
-          <p class="has-text-centered is-size-5" style="margin-top: 0.5rem;"><em>Type \"VLIA\" on the keyboard.</em></p>
+          <p class="has-text-centered is-size-5" style="margin-top: 0.5rem;"><em>Type "VLIA" on the keyboard.</em></p>
         </div>
       </div>
     </div>
@@ -218,6 +218,20 @@
       <p class="has-text-centered" style="margin-top: 1rem;">
         Quantitative comparison between our method and baseline methods on the real-robot experiment.
       </p>
+    </div>
+  </section>
+
+  <section class="section" id="human-pretrain-experiment">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Instruction Following on Human Videos</h2>
+      <div class="content has-text-justified" style="margin-bottom: 1.5rem;">
+        <p>
+          We evaluate the model's instruction-following ability on human data. The top row shows predictions using the original language instructions from the human dataset, while the bottom row shows predictions using counterfactual language instructions for the same visual input. We find that the model can first infer the correct intent from the task description and then generate the appropriate wrist trajectory.
+        </p>
+      </div>
+      <div class="content has-text-centered">
+        <img src="static/figure/pretrain_evaluation.png" alt="Human pretraining experiment evaluation" loading="lazy">
+      </div>
     </div>
   </section>
 
