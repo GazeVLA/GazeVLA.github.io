@@ -1,6 +1,6 @@
 # GazeVLA
 
-This is the repository that contains source code for the [GazeVLA website](https://lichy2004.github.io/GazeVLA/).
+This is the repository that contains source code for the [GazeVLA website](https://gazevla.github.io/).
 
 If you find GazeVLA useful for your work please cite:
 ```
