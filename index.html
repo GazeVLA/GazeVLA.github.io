@@ -147,7 +147,7 @@
 
   <section class="section is-light" id="real-world">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Real-World Demonstrations</h2>
+      <h2 class="title is-3 has-text-centered">Real-World Experiments</h2>
       <p class="content has-text-justified" style="margin-bottom: 0.75rem; font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
         To evaluate cross-embodiment transfer and robustness in real-world deployment, we conduct extensive real-robot experiments covering gripper-based manipulation, dexterous manipulation, long-horizon tasks, and fine-grained operations. The green cross indicates the predicted intention.
       </p>
@@ -174,22 +174,25 @@
           <video autoplay muted loop playsinline controls width="100%" preload="metadata">
             <source src="static/video/real_world/keyboard_robot.mp4" type="video/mp4">
           </video>
-          <p class="has-text-centered is-size-5" style="margin-top: 0.5rem;"><em>Type "VLIA" on the keyboard.</em></p>
+          <p class="has-text-centered is-size-5" style="margin-top: 0.5rem;"><em>Type \"VLIA\" on the keyboard.</em></p>
         </div>
-        <p class="content has-text-justified" style="margin-bottom: 1.1rem; font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary);">
-          We evaluated the object generalization ability on dexterous manipulation tasks. The training set only contained one type of water bottle.
-        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="generalization">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Generalization</h2>
+      <p class="content has-text-justified" style="margin-bottom: 1.1rem; font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary);">
+        We conducted generalization tests for both objects and backgrounds. For the "Put the bottle on the plate" task, the training data contained only one type of water bottle. For the "Put the fruit on the plate" task, the training data only involved grasping lemons in a clean background.
+      </p>
+      <div class="columns is-multiline">
         <div class="column is-full">
           <video autoplay muted loop playsinline controls width="100%" preload="metadata">
             <source src="static/video/real_world/bottle_robot.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered is-size-5" style="margin-top: 0.5rem;"><em>Put the bottle on the plate.</em></p>
         </div>
-      </div>
-      <p class="content has-text-justified" style="margin-bottom: 1.1rem; font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary);">
-        We also tested the generalization to both objects and backgrounds in gripper manipulation tasks. The robotic training data solely involved grasping lemons against a table background.
-      </p>
-      <div class="columns is-multiline" style="margin-top: 1.25rem;">
         <div class="column is-full">
           <video autoplay muted loop playsinline controls width="100%" preload="metadata">
             <source src="static/video/generalization/object_ood.mp4" type="video/mp4">
@@ -250,7 +253,7 @@
 
   <section class="section" id="simulation">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Experiments</h2>
+      <h2 class="title is-3 has-text-centered">Simulation Experiments</h2>
       <div class="table-container">
         <table class="table is-striped is-hoverable is-fullwidth">
           <thead>
